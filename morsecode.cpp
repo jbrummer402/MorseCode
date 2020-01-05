@@ -38,7 +38,8 @@ vector<string> alph = {
 
 struct Node{
     string data;
-    struct Node *left, *right;
+    unsigned freq;
+    Node *left, *right;
 };
 
 struct Heap{
