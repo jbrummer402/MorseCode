@@ -41,15 +41,15 @@ struct Node{
     unsigned freq;
     Node *left, *right;
     Node(string data, unsigned freq){
-        left = right = null;
+        left = nullptr; 
+        right = nullptr;
         this->data = data;
         this->freq = freq;
     }
 };
 
-struct Heap{
+struct MinHeap{
     
-    void insertNode(Node *n, string data);
 };
 
 
