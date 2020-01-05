@@ -40,10 +40,15 @@ struct Node{
     string data;
     unsigned freq;
     Node *left, *right;
+    Node(string data, unsigned freq){
+        left = right = null;
+        this->data = data;
+        this->freq = freq;
+    }
 };
 
 struct Heap{
-    Node **nodeArray;
+    
     void insertNode(Node *n, string data);
 };
 
