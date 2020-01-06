@@ -38,22 +38,21 @@ vector<string> alph = {
 
 struct Node{
     string data;
-    unsigned freq;
     Node *left, *right;
-    Node(string data, unsigned freq){
+    Node(string data){
         left = nullptr; 
         right = nullptr;
         this->data = data;
-        this->freq = freq;
     }
 };
 
 struct MinHeap{
-    
+    Node *root = new Node(" ");
+    void makeTree();
+
 };
 
 
 int main(int argc, char *argv[]){
-
     return 0;
 }
