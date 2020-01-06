@@ -44,13 +44,24 @@ struct Node{
         right = nullptr;
         this->data = data;
     }
+    Node* getLeft();
+    Node* getRight();
 };
+
+Node* Node::getLeft(){
+    return this->left;
+}
+Node* Node::getRight(){
+    return this->right;
+}
 
 struct MinHeap{
     Node *root = new Node(" ");
     void makeTree();
-
+    void traverse(string word);
 };
+
+
 
 
 int main(int argc, char *argv[]){
